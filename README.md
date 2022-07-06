@@ -2,16 +2,13 @@
     Today I Learned
 </h1>
 
-
-
 > Organize Everyday What I Learned Following Multicampus Lecture.
 
-
+***
 
 <h3>
     1st Week : Git/Github
 </h3>
-
 <img style="max-height:20%; max-width:20%;" src="./README.assets/github.png">
 
 **Markdown**
@@ -22,9 +19,11 @@
 
 **Git/Github**
 
-* [Basic Git Syntax](./1week/git 기본.md)
-* [Beginner Git](./1week/git 기초.md)
-* [Intermediate Git](./1week/git 중급.md)
+* [Basic Git Syntax](./1week/git_기본.md)
+* [Beginner Git](./1week/git_기초.md)
+* [Intermediate Git](./1week/git_중급.md)
+
+***
 
 <h3>
     2nd Week : Python
