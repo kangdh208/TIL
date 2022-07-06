@@ -28,9 +28,9 @@
 
 1. **gitignore 파일 만들기**          >>주의!!         *항상 최상위 디렉토리에 존재해야 함
 
-<img src='./git 기본.assets/vi_create.png'>
+<img src='./git_기본.assets/vi_create.png'>
 
-![vi img](./git 기본.assets/Vi_ignore.png)
+![vi img](./git_기본.assets/Vi_ignore.png)
 
 2. **gitignore 파일에 한 줄씩 제외할 파일이나 폴더 적기**
 
