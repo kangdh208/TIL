@@ -1,6 +1,4 @@
-<h1>
-    Today I Learned
-</h1>
+# :bookmark: Today I Learned
 
 > Organize Everyday What I Learned Following Multicampus Lecture.
 
