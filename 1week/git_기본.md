@@ -1,5 +1,5 @@
 <h1>
-    Git Branch and Merge
+    Git 기본
 </h1>
 
 <h3>
@@ -30,7 +30,6 @@
 
 <img src='./git_기본.assets/vi_create.png'>
 
-![vi img](./git_기본.assets/Vi_ignore.png)
-
 2. **gitignore 파일에 한 줄씩 제외할 파일이나 폴더 적기**
 
+![vi img](./git_기본.assets/Vi_ignore.png)
