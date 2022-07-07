@@ -45,7 +45,11 @@ Initialized empty Git repository in C:/Users/username/Desktop/TIL/.git/
 <br>
 
 ```bash
+파일 일괄 add
 $ git add .
+
+파일 개별 add
+$ git add <File.name>
 ```
 
 ```bash
