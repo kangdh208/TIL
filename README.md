@@ -21,8 +21,10 @@
 
 **Git/Github**
 
-* [Basic Git Syntax](./1week/git_기본.md)
-* [Beginner Git](./1week/git_기초.md)
+* [Git Entrance](./1week/git_기본.md)
+
+* [Basic Git Syntax](./1week/git_기초.md)
+* [Beginner Git](./1week/git_초급.md)
 * [Intermediate Git](./1week/git_중급.md)
 * [Advanced Git](./1week/git_고급.md)
 
