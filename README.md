@@ -9,6 +9,10 @@
 </h3>
 <img style="max-height:20%; max-width:20%;" src="./README.assets/github.png">
 
+**CLI**
+
+* [CLI(Linux/Git)](./1week/CLI.md)
+
 **Markdown**
 
 * [Markdown Syntax](./1week/마크다운.md)
@@ -20,6 +24,7 @@
 * [Basic Git Syntax](./1week/git_기본.md)
 * [Beginner Git](./1week/git_기초.md)
 * [Intermediate Git](./1week/git_중급.md)
+* [Advanced Git](./1week/git_고급.md)
 
 ***
 
