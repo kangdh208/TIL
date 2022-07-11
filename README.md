@@ -36,3 +36,21 @@
 
 
 <img style="max-height:20%; max-width:20%;" src="./README.assets/python.png">
+
+* [Python Entrance](./2week/Python_기초.md)
+
+* [Basic Python Syntax](./2week/Python_기본.md)
+* [Beginner Python](./2week/Python_중급.md)
+* [Intermediate Python](./2week/Python_중급.md)
+* [Advanced Python](./2week/Python_고급.md)
+
+***
+
+<h3>
+    3rd Week : Python Expert Level
+</h3>
+
+* [Python Junior](./3week/Python_응용1.md)
+* [Python Mid Level](./2week/Python_응용2.md)
+* [Python Senior](./2week/Python_응용3.md)
+
