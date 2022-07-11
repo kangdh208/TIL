@@ -117,9 +117,31 @@ $ git branch -d example
 <h3>
     Git.gitkeep
 </h3>
-
-
 > `.gitkeep` 이란  `git`사용자가 만든 빈 파일. `Git` 저장소가 빈 프로젝트 디렉토리를 유지.
 >
 > A라는 빈폴더를 생성하고 커밋하려고 해도 A폴더는 `Git` 저장소에 커밋되지 않지만 `gitkeep`파일을 A폴더에 넣으면 커밋 가능. 삭제할 때도 `gitkeep` 있으면 커밋할 때 없어지지 않고 유지됨
 
+
+
+<h3>
+    Authority
+</h3>
+
+<h5>
+    Shared Repository vs Folk and Pull Repository
+</h5>
+
+> `Shared Repository Model` 는 권한을 갖은 상태에서 `pull`. 
+>
+> `Shared Repository Model`에서 작업에 대한 수정을 요할 때 `collaborator`에게는 단일공유저장소와 토픽브랜치가 생성됨. `pull requests`는 코드를 리뷰할때와 작업에 대한 수정내용을 통합브랜치에 `merge`하기 전에 수정한 방향에 대한 토론을 할때 유용함. 소규모 프로젝트와 프라이빗한 프로젝트에 유용
+
+> `Folk & Pull Repository Model` 는 권한이 없는 상태에서 `pull`. 
+>
+> `Folk & Pull Repository Model`에서는 누구나 이미 존재하는 저장소에 대해 `fork`를 할 수 있고 수정 작업을 `push`할 수 있음. 소스코드가 있는 저장소에 대해 소유주에게 `fork`에 대한 허가가 필요하지 않으며 수정작업은 프로젝트를 유지하는 사람은 누구나 `push`할 수 있음. 이 모델은 새 `contributors`와의 많은 마찰을 줄이면서, 사전조정이 필요하지 않으므로 개개인이 독립적인 작업을 할 수 있게하므로 오픈소스프로젝트에 적합함
+
+* 용어정리
+  * `Contributor` : 관리자. `push`와 `pull`, `merge`에 대한 허용권한등을 갖고 있는 사람
+  * `Collaborator` : `push`와 `pull` 권한을 모두 가지고 있는 사람, `contributor`와 달리 관리자가 직접 추가해줘야 얻을 수 있는 권한
+  * 통합브랜치(`Integration branch`) : 언제라도 배포할 수 있는 버전을 만들 수 있어야 하는 브랜치, 중앙브랜치, 일반적으로 `master branch`를 통합브랜치로 사용
+  * 토픽브랜치(`Topic branch`) : 기능 추가나 버그 수정과 같은 단위 작업을 위한 브랜치, 피처브랜치(`feature branch`)라고도 부름
+  * 단일공유저장소 : `single shared repository` .
