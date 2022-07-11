@@ -7,7 +7,10 @@
 <h3>
     1st Week : Git/Github
 </h3>
-<img style="max-height:20%; max-width:20%;" src="./README.assets/github.png">
+<p align="center">
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white"/></a>&nbsp
+  <img src="https://img.shields.io/badge/GitHub-333664?style=flat&logo=GitHub&logoColor=white"/></a>&nbsp
+</p>
 
 **CLI**
 
@@ -33,9 +36,9 @@
 <h3>
     2nd Week : Python
 </h3>
-
-
-<img style="max-height:20%; max-width:20%;" src="./README.assets/python.png">
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-ffb13b?style=flat&logo=python&logoColor=white"/></a>&nbsp 
+</p>
 
 * [Python Entrance](./2week/Python_기초.md)
 
