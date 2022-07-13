@@ -47,9 +47,9 @@
 * [Advanced Python](./2week/Python_고급.md)
 * [Python Exercise & Practice](./2week/Python/)
 
-  * BJ00000 : BAEKJOON
+  * BJ1000 ~ : BAEKJOON
   * CU6001 ~ CU6098 : CodeUp
-  * NT1201 ~ NT1208 : NoTion Practice(On July 12th)
+  * NT1001 ~  : NoTion Practice (1000~ : 예제 , 2000~ : 문제)
 
 
 ***

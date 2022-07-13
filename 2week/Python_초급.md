@@ -4,7 +4,7 @@
     함수
 </h2>
 
-* 특정한 기능을 하는 코드의 조각
+* 특정한 기능을 하는 코드의 조각(묶음)
 
 * 특정 명령을 수행하는 코드를 매번 다시 작성하지 않고, 필요 시에만 호출하여 간편히 사용
 
@@ -52,10 +52,13 @@
 
     * 들여쓰기를 통해 Function body(실행될 코드 블록)를 작성
 
+      • Docstring은 함수 body 앞에 선택적으로 작성 가능
+      	• 작성시에는 반드시 첫 번째 문장에 문자열 ''' '''
+  
     * 함수는 파라미터를 넘겨줄 수 있음
-
+  
     * 함수는 동작 후에 return을 통해 결과값을 전달함
-
+  
       ```python
       def foo(): # 함수의 선언
         return True
@@ -65,9 +68,9 @@
         return x + y
       add(2,3) # 5
       ```
-
+  
       > 예시
-
+  
       ```python
       num1 = 0
       num2 = 1
@@ -84,29 +87,29 @@
       result = func3(num1, num2) # 1. 호출
       print(result) # 6. 9
       ```
-
+  
       
-
+  
   * 입력(Input)
-
+  
     * Parameter : 함수를 실행할 때, 함수 내부에서 사용되는 식별자
-
+  
     * Argument : 함수를 호출 할 때, 넣어주는 값
 
       * 필수 Argument : 반드시 전달되어야 하는 argument
       * 선택 Argument : 값을 전달하지 않아도 되는 경우는 기본 값이 전달
-
+  
       ```python
       def function(ham): # parameter : ham
         return ham
       
       function('spam') # argument : spam
       ```
-
+  
       * positional arguments
-
+  
         * 기본적으로 함수 호출 시 Argument는 위치에 따라 함수 내에 전달됨
-        
+      
           ```python
           def add(x, y):
             return x + y
@@ -199,13 +202,22 @@
         # NameError : name 'a' is not defined // a가 정의되지 않은 오류 발생
         ```
 
+  * 객체 수명주기
+
+    * built-in scope `(print, sum, len..)`
+      * 파이썬이 실행된 이후부터 영원히 유지됨
+    * global scope `a=3`
+      * 모듈이 호출된 시점 이후 혹은 인터프리터가 끝날 때까지 유지
+    * local scope `def ___ a = 1..`
+      * 함수가 호출될 때 생성되고, 함수가 종료될 때 까지 유지
+
   * 결과값(Output) : return
 
     * 함수는 반드시 값을 하나만 return
       * 명시적 return이 없는 경우에도 None을 반환
       
     * 함수는 return과 동시에 실행이 종료
-    
+
       ```python
       def minus_and_product(x,y):
         return x - y
@@ -218,15 +230,6 @@
       minus_and_product(4, 5)
       # -> (-1, 20) 튜플 반환이 됨
       ```
-
-* 객체 수명주기
-
-  * built-in scope `(print, sum, len..)`
-    * 파이썬이 실행된 이후부터 영원히 유지됨
-  * global scope `a=3`
-    * 모듈이 호출된 시점 이후 혹은 인터프리터가 끝날 때까지 유지
-  * local scope `def ___ a = 1..`
-    * 함수가 호출될 때 생성되고, 함수가 종료될 때 까지 유지
 
 * 이름 검색 규칙(Name Resolution)
 
@@ -256,10 +259,10 @@
 <h2>
     Python 내장 함수
 </h2>
-
 <h3>
-    map
+    map 함수(iterable;순회가능)
 </h3>
+
 
 > 순회 가능한 데이터구조(iterable)의 모든 요소에 함수 적용하고, 그 결과를 map object로 반환
 
@@ -285,3 +288,4 @@ print(new_numbers)
 #[20, 30, 40]
 ```
 
+> 알고리즘 문제 풀이시 input 값들을 숫자로 바로 활용하고 싶을 때 사용
