@@ -41,11 +41,15 @@
 </p>
 
 * [Python Entrance](./2week/Python_기초.md)
-
 * [Basic Python Syntax](./2week/Python_기본.md)
-* [Beginner Python](./2week/Python_중급.md)
+* [Beginner Python](./2week/Python_초급.md)
 * [Intermediate Python](./2week/Python_중급.md)
 * [Advanced Python](./2week/Python_고급.md)
+* [Python Exercise & Practice](./2week/Python/)
+
+  * CU6001 ~ CU6098 : CodeUp
+  * NT1201 ~ NT1208 : NoTion Practice(On July 12th)
+
 
 ***
 
