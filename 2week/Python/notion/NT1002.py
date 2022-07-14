@@ -4,15 +4,10 @@
 # * 사각형 넓이 : 가로 * 세로 
 # * 사각형 둘레 : (가로 + 세로) * 2
 
-def area(a, b):
-    result = a* b
-    return result
-def round(a, b):
-    result = (a + b)*2
-    return result
+def rectangle(a, b):
+    area = a* b
+    round = (a + b)*2
+    return area, round
 
 width, height = map(int, input().split())
-a = area(width, height)
-b = round(width, height)
-print(a)
-print(b)
+print(rectangle(width, height))

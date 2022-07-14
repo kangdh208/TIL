@@ -2,3 +2,16 @@
 string = input()
 reverse_string = string[::-1]
 print(reverse_string)
+# 같은 결과
+a = input()
+value = ''
+for i in a:
+    value = i + value
+print(value)
+# 같은 결과
+b = input()
+print(''.join(reversed(b)))
+# 같은 결과
+c = input()
+for i in range(len(c)):
+    print((c[len(c)-i-1]), end='')

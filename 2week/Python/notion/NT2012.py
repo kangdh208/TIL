@@ -3,3 +3,12 @@
 a = input()
 adel = a.replace('a', '')
 print(adel)
+
+#같은 결과
+b = input()
+char =''
+for i in b:
+    if i != 'a':
+        char = char+ i
+
+print(char)
