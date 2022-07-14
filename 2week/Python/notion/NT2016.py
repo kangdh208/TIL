@@ -12,3 +12,23 @@ for i in range(len(A)):
     if a[i] == 'a' or a[i] == 'e' or a[i] == 'i' or a[i] == 'o' or a[i] == 'u':
         cnt += 1
 print(cnt)
+
+# 리스트가 필요할까
+b = input()
+cnt1 = 0
+for i in b:
+    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+        cnt1 += 1
+print(cnt1)
+
+#수업추가풀이
+c = input()
+cnt2 = 0
+for i in c:
+    if i in 'aeiou':
+        cnt2 += 1
+print(cnt2)
+
+#한줄샷
+d = input()
+print(''in d)

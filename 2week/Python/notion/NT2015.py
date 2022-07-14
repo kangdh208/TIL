@@ -20,3 +20,29 @@ if cnt == len(A)-1:
     else:
         cnt = -1
 print(cnt)
+
+# 이것도 리스트 할 필요는 없지
+b = input()
+cnt2 = -1
+for i in range(len(b)):
+    if i == 'a':
+        cnt = cnt + i
+print(cnt2)
+# 수업풀이
+c = input()
+for i in range(len(c)):
+    if c[i] == 'a':
+        print(i)
+        break
+else:
+    print(-1)
+#a의 유무판별
+d = input()
+is_a = False
+for i in range(len(d)):
+    if d[i] == 'a':
+        print(i)
+        is_a = True
+        break
+if not is_a:
+    print(-1)

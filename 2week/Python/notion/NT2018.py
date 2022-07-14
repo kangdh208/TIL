@@ -9,3 +9,22 @@ for i in a:
         dic[i] += 1
 for alpha, cont in dic.items():
     print(alpha, cont)
+
+#수업풀이
+b = input()
+res = {}
+for i in b:
+    if not i in b:
+        res[i] = 1
+    else:
+        res[i] = res[i] +1
+for k in res:
+    print(k, res[k])
+
+#get 사용
+c = input()
+re = {}
+for i in c:
+    re[i] = re.get(i, 0) + 1
+for k in re:
+    print(k, re[k])
