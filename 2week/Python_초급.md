@@ -289,3 +289,197 @@ print(new_numbers)
 ```
 
 > 알고리즘 문제 풀이시 input 값들을 숫자로 바로 활용하고 싶을 때 사용
+
+<h3>
+    리스트 메서드
+</h3>
+
+* `input().split()`
+  
+  * input() 된 문자열을 공백 기준으로 분할
+  * .split('-') 같은 형태로 변경가능
+  
+* `[리스트].append()`
+  
+  * 괄호 안의 내용을 리스트 후위에 추가
+  
+  * .extend(iterable) : 하나씩 하기 싫을 때
+  
+    * iterable에 무엇을 넣은가가 중요
+  
+  * 리스트에 iterable 추가함 
+  
+    ```python
+    a = ['apple']
+    a.extend('banana', 'mango')
+    print(a)
+    # typeerror : list.extend() takes
+    
+    # ('banana', 'mango') => (['banana', 'mango']) : 튜플이 아닌 리스트형태로 추가해야함
+    # a.extend('banana') 문자열 하나씩 출력됨
+    ```
+    
+    ```python
+    a = [1, 2, 3]
+    a = a.append(4)
+    # 코드의 결과는 none
+    # a.append(4) 의 return 값을 a에 저장한다. 
+    # 리스트.append()의 메서드는 반환값이 none이다. 
+    print(a)
+    
+    a = [1, 2, 3]
+    a.append(4)
+    print(a)
+    
+    a = [1, 2, 3]
+    #sum 함수의 return 값을 변수 result에 할당 
+    result = sum(a)
+    ```
+  
+* `.insert(i, x)`
+  
+  * 정해진 위치에 i에 값을 추가함
+* `.remove(x)`
+  * 리스트에서 값이 x인 것 삭제
+  * 리스트 가장 왼쪽에 있는 항목(첫번째) x를 제거
+  * 항목이 존재하지 않을 경우 value error
+* `.pop(i)`
+  * 정해진 위치 i에 있는 값을 삭제하고, 그 항목을 반환
+  * i가 지정되지 않으면, 마지막 항목을 삭제하고 반환
+* `.clear()`
+  * 모든 항목을 삭제
+
+<h3>
+    문자열 메서드
+</h3>
+
+* 문자열 탐색 
+
+  * `.find(x)` x의 첫 위치를 반환, 없으면, -1
+  * `.index(x)` x의 첫번째 위치를 반환, 없으면, 오류발생
+
+* 문자열 관련 검증 메소드 
+
+  * `.isalpha()` : 알파벳인지 확인
+  * `.isdigit()` : 숫자인지 확인
+  * `.isupper()` : 대문자인지 확인
+  * `.islower()` : 소문자인지 확인
+
+* `.replace(old, new,[count])`   
+
+  * `[,count]은 선택`
+  * 바꿀 대상 글자를 새로운 글자로 바꿔서 반환
+  * count를 지정하면, 해당 개수만큼만 시행 
+
+* `.strip([chars])`
+
+  * 특정한 문자들을 지정하면, 양쪽을 제거(strip)하거나, 왼쪽을 제거(lstrip)하거나, 오른쪽을 제거(rstrip) 
+  * 대부분 문자열을 지정하지 않으면 공백(space와 enter도 포함)을 제거할때 자주 사용
+
+* `.split(sep=none, maxsplit=-1)`
+
+  * 문자열을 특정한 단위로 나눠 리스트로 반환
+  *  sep이 none이거나 지정되지 않으면 연속된 공백 문자를 단일한 공백문자로 간주하고, 선행/후행 공백은 빈 문자열에 포함시키지 않음 
+  * maxsplit이 -1인 경우에는 제한이 없음
+* `'separator'.join([iterable])`
+
+  * 반복가능한 컨테이너 요소들을 separator 로 합쳐 문자열 반환
+  * iterable에 문자열이 아닌 값이 있으면  typeerror 발생
+
+<h3>
+    탐색 및 정렬
+</h3>
+
+* `.index(x)`
+
+
+  * x값을 찾아 해당 index 값을 반환, 없는 경우 valueerror 발생
+
+* `.count(x)`
+
+
+  * 원하는 값의 개수를 반환 ; 리스트 순회
+
+* `.sort()`
+
+
+  * 리스트 항목 오름차순 배열
+
+  * none반환
+
+    ~~~python
+    # 리스트_메서드 활용
+    a = [10, 1, 100]
+    # 정렬 (sort)
+    new_a = a.sort() 
+    print(a, new_a)
+    # [10, 1, 100] none
+    # 리스트 메서드에 활용하면, 그 메서드를 정렬된 상태로 변경(원본 변경)
+    
+    # 리스트에 sorted 함수를 활용
+    b = [10, 1, 100]
+    # 정렬(sorted)
+    new_b = sorted(b) 
+    print(b, new_b)
+    # [10, 1, 100] [10, 1, 100]
+    # sorted 함수를 활용하면, 원본을 변경하지 않음 
+    # return되는 것은 정렬된 리스트
+    ```
+    ~~~
+
+* `.reverse()`
+
+
+  * 순서를 반대로 뒤집음, none반환
+  * 정렬하는 것이 아님
+
+
+> mutable(가변객체) 과 immutable(불변객체)
+>
+> ```python
+> # 리스트는 mutable
+> a = [1, 2, 3]
+> a[0] = 100
+> print(a)
+> # [100, 2, 3] : 리스트는 가변
+> 
+> #문자열은 immutable
+> a = 'hi'
+> a[0] ='c'
+> print(a)
+> # 타입에러 : str object does not support item assignment : 문자열은 불변
+> ```
+
+<h3>
+    딕셔너리 (키-값)
+</h3>
+
+* `.get(key[,default])`
+  * key 를 통해 value 를 가져옴 
+  * key error 가 발생하지 않으며 default 값을 설정 가능(none 기본)
+* `.pop(key,[default])`
+
+  * key가 딕셔너리에 있으면 제거하고 해당 값을 반환 
+  * 그렇지 않으면 default 반환
+  * default 값이 없으면 key error 발생 
+* `.update([other])`
+
+  * 값을 제공하는 key, value 로 덮어씀
+
+```python
+#기본순회
+#키가 기준이고 직접 딕셔너리에 key로 접근하면 value를 얻을 수 있다. 
+my_dict = {'apple': '사과', 'banana' : '바나나'}
+
+for word in my_dict:
+	print(word)
+
+# apple
+# banana
+
+
+# value 접근
+for word in my_dict:
+	print(word, my_dict[word])
+```
+
