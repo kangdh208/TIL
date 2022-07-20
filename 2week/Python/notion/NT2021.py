@@ -9,4 +9,3 @@ while n:
     revnum = n % 10
     n //= 10
     print(revnum, end='') 
-
