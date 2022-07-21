@@ -51,6 +51,10 @@
   * CU6001 ~ CU6098 : CodeUp
   * NT1001 ~  : NoTion Practice (1000~ : 예제 , 2000~ : 문제)
 
+* [Python Junior](./2week/Python_응용1.md)
+* [Python Mid Level](./2week/Python_응용2.md)
+* [Python Senior](./2week/Python_응용3.md)
+
 
 ***
 
@@ -58,7 +62,5 @@
     4th - 6th Week : Algorithm
 </h3>
 
-* [Python Junior](./3week/Python_응용1.md)
-* [Python Mid Level](./2week/Python_응용2.md)
-* [Python Senior](./2week/Python_응용3.md)
+
 
