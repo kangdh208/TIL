@@ -34,7 +34,7 @@
 ***
 
 <h3>
-    2nd Week : Python
+    2nd - 3rd Week : Python
 </h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-ffb13b?style=flat&logo=python&logoColor=white"/></a>&nbsp 
@@ -55,7 +55,7 @@
 ***
 
 <h3>
-    3rd Week : Python Expert Level
+    4th - 6th Week : Algorithm
 </h3>
 
 * [Python Junior](./3week/Python_응용1.md)
