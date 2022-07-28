@@ -48,3 +48,16 @@ for z in range(1, N+1):
 
 for j in range(N):
     print(f'#{j+1} {result[j]}')
+# 수업풀이
+T = int(input())
+for case in range(T):
+    N = int(input())
+    num = N
+    numbers = set()
+    while len(numbers) <10:
+        for n in str(N):
+            numbers.add(n)
+        if len(numbers)==10:
+            break
+        N += num
+    print(f'#{case} {N}')
