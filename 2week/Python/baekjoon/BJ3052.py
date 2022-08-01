@@ -15,3 +15,9 @@ n9 = int(input())%42
 a = {n0, n1, n2, n3, n4, n5, n6, n7, n8, n9}
 print(len(a))
 
+number =[]
+for i in range(10):
+    n = int(input())%42
+    number.append(n)
+numbers = set(number)
+print(len(numbers))

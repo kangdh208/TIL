@@ -16,3 +16,21 @@ print(d.count('6'))
 print(d.count('7'))
 print(d.count('8'))
 print(d.count('9'))
+
+# 새풀이
+import sys
+
+sys.stdin = open("0_숫자의개수.txt")
+A = int(input())
+B = int(input())
+C = int(input())
+
+multiply = A*B*C #곱한수
+check ={
+    '0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0
+} # 딕셔너리 만들기
+for i in str(multiply):
+    if i in check:
+        check[i] += 1 #있으면 하나씩 추가
+for k, v in check.items():
+    print(v) # 출력 
