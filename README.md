@@ -50,10 +50,8 @@
   * BJ1000 ~ : BAEKJOON
   * CU6001 ~ CU6098 : CodeUp
   * NT1001 ~  : NoTion Practice (1000~ : 예제 , 2000~ : 문제)
-
 * [Python Junior](./2week/Python_응용1.md)
-* [Python Mid Level](./2week/Python_응용2.md)
-* [Python Senior](./2week/Python_응용3.md)
+* [Python Senior](./2week/Python_응용2.md)
 
 
 ***
@@ -61,6 +59,13 @@
 <h3>
     4th - 6th Week : Algorithm
 </h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/Algorithm-00BCB4?style=flat&logo=thealgorithms&logoColor=white"/></a>&nbsp 
+</p>
 
 
 
+* [Algorithm Basic](./2week/Algorithm_기초.md)
+* [Algorithm Begginer](./2week/Algorithm_초급.md)
+* [Algorithm Intermediate](./2week/Algorithm_중급.md)
+* [Algorithm Advanced](./2week/Algorithm_고급.md)
