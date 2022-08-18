@@ -65,7 +65,7 @@
 
 
 
-* [Algorithm Basic](./2week/Algorithm_기초.md)
-* [Algorithm Begginer](./2week/Algorithm_초급.md)
-* [Algorithm Intermediate](./2week/Algorithm_중급.md)
-* [Algorithm Advanced](./2week/Algorithm_고급.md)
+* [Algorithm Basic](./4week/Algorithm_기초.md)
+* [Algorithm Begginer](./4week/Algorithm_초급.md)
+* [Algorithm Intermediate](./4week/Algorithm_중급.md)
+* [Algorithm Advanced](./4week/Algorithm_고급.md)
