@@ -12,5 +12,4 @@ for i in range(1,N):
     while stack and lst[stack[-1]] < lst[i]:
         number[stack.pop()] = lst[i]
     stack.append(i)
-print(number)
-
+print(*number)
