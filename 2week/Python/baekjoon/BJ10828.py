@@ -26,7 +26,7 @@ for _ in range(N):
         print(len(stack))
     elif word[0] == 'empty':
         if len(stack) == 0:
-            print(-1)
+            print(1)
         else:
             print(0)
     elif word[0] == 'top':
