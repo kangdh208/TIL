@@ -540,7 +540,6 @@ text-Atype {
 <h4>
     display : 요소 출력 형식 제어
 </h4>
-
 > 요소마다 어떤 형식으로 화면에 출력할지 설정 - block, inline, inline-block, ...
 
 * 속성값
@@ -570,13 +569,25 @@ text-Atype {
     }
     ```
 
-<h3>
-    글꼴
-</h3>
+<h4>
+    투명도 : opacity
+</h4>
+
+> 요소의 투명도
+
+* 속성값
+  * 0 ~ 1
+    * 0 : 완전 투명
+    * 1 : 불투명 / 기본값
 
 <h4>
-    font-style: 글자 기울기
+    글꼴
 </h4>
+
+<h5>
+    font-style: 글자 기울기
+</h5>
+
 
 * 속성값
 
@@ -584,7 +595,7 @@ text-Atype {
 
   - italic: 이텔릭체
 
-<h4>font-weight: 글자 두께</h4>
+<h5>font-weight: 글자 두께</h5>
 
 * 속성값
   - 100~900, 100단위로 9개 값
@@ -593,7 +604,7 @@ text-Atype {
     - bolder: 부모보다 두껍게
     - lighter: 부모보다 얇게
 
-<h4>font-size: 글자 크기</h4>
+<h5>font-size: 글자 크기</h5>
 
 * 속성값
 
@@ -601,7 +612,7 @@ text-Atype {
 
   - %, smaller 등의 상대값 키워드가 있지만 모호하므로 지양
 
-<h4>line-height: 한 줄의 높이</h4>
+<h5>line-height: 한 줄의 높이</h5>
 
 * 속성값
 
@@ -621,7 +632,7 @@ text-Atype {
   }
   ```
 
-<h4>font-family: 글꼴 지정</h4>
+<h5>font-family: 글꼴 지정</h5>
 
 * 속성값
 
@@ -647,9 +658,9 @@ text-Atype {
   - fantasy: 장식 글꼴 계열
   - 기타 등등
 
-<h3>문자</h3>
+<h4>문자</h4>
 
-<h4>color: 글자 색상</h4>
+<h5>color: 글자 색상</h5>
 
 * 속성값
 
@@ -657,7 +668,7 @@ text-Atype {
 
   - 기본값 - rgb(0, 0, 0): 검정색
 
-<h4>text-aling: 문자 정렬</h4>
+<h5>text-aling: 문자 정렬</h5>
 
 * 속성값
 
@@ -665,7 +676,7 @@ text-Atype {
 
   - right, center, justify(양쪽정렬)
 
-<h4>text-decoration: 문자에 선 추가</h4>
+<h5>text-decoration: 문자에 선 추가</h5>
 
 * 속성값
 
@@ -677,15 +688,599 @@ text-Atype {
 
   - line-through: 중앙 선
 
-<h4>
+<h5>
     text-indent: 들여쓰기, 내어쓰기
-</h4>
+</h5>
+
 
 * 속성값
 
   * 실수값: 양수면 들여쓰기, 음수면 내어쓰기. 기본값은 0
 
   - 단위 - px, em, rem 등
+
+<h4>
+    배경 : Background
+</h4>
+
+<h5>
+    색상 : background-color
+</h5>
+
+* 속성값
+  * transparent : 투명 / 기본값
+
+<h5>
+    배경 이미지 : background-image
+</h5>
+
+* 속성값
+  * none : 없음 / 기본값
+  * url("이미지경로") : 이미지 경로 입력
+
+<h5>
+    배경 이미지 반복 제어 : background-repeat
+</h5>
+
+* 속성값
+  * repeat : 바둑판식(반복) 배열 / 기본값
+  * repeat-x / repeat-y : 각 축에만 이미지 반복 배열
+  * no-repeat : 반복 안함
+
+<h5>
+    배경 이미지 위치 : background-position
+</h5>
+
+* 속성값
+
+  * 요소 좌측 상단이 기본 위치
+
+  * 방향: top, bottom, left, right, center
+
+  * 단위: 요소 좌측 상단을 원점으로하여 배경 이미지 배치
+
+    ```css
+    background-position: left;`
+    `background-position: bottom 10px right 20px;`
+    `background-position: 25px 75px;
+    ```
+
+  * 단축속성
+
+    * `background-position: center;`
+    * `background-position: x속성값 y속성값;`
+
+<h5>
+    배경 이미지 크기 : background-size
+</h5>
+
+* 속성값
+  * auto: 이미지 실제 크기 / 기본값
+  * 단위: 이미지 크기 지정
+  * cover: 비율 유지, 요소의 더 넓은 너비에 맞춤
+  * contain: 비율 유지, 요소의 더 짧은 너비에 맞춤
+  * 단축속성
+    * `background-size: x크기;`: 비율 유지한채로 가로를 입력값에 맞춤
+    * `background-size: x크기 y크기;`
+
+<h5>
+    배경 이미지 스크롤 특성 : background-attachment
+</h5>
+
+* 속성값
+  * scroll: 배경 이미지가 요소에 고정, 스크롤시에 요소를 따라 함께 이동.
+  * fixed: 배경 이미지가 뷰포트에 고정, 스크롤시에 요소를 따라 이동하지 않음.
+
+<h4>
+    배치
+</h4>
+
+<h5>
+    요소 위치 설정 기준 : position
+</h5>
+
+* 속성값
+
+  - static: 기준 없음 / 기본값
+
+  - relative: 요소 자신 기준
+
+  - absolute: "위치 상(?)" 부모 요소 기준
+
+  - fixed: 뷰포트 기준
+
+  - sticky: 스크롤 영역 기준
+
+<h5>
+    속성값들
+</h5>
+* 상대 속성값(relative)
+  * 원래 요소의 위치를 기준으로하여 요소 배치
+* 절대 속성값(absolute)
+  * 위치 상 부모 요소를 기준으로 요소 배치
+    * 위치 상 부모요소: position의 속성값이 static(기본값)이 아닌 가장 가까운 조상 요소
+  * 다른 형제 요소들과 상호작용할 필요가 없어져 다른 요소들의 위치에 영향을 주지 않아 구조가 무너짐
+
+* 고정 속성값(fixed)
+  * 뷰포트를 기준으로 요소 배치
+  * absolute와 마찬가지로 다른 형제 요소들과 상호작용하지 않게됨
+  * 스크롤 이동에 관계없이 위치가 고정
+
+1. **relative는 실제로 사용하기보다는 부모 요소에 position 속성을 선언하기에 적당**
+
+   * absolute, fixed의 경우 다른 요소들과 상호작용을 하지 않게되며 구조가 무너지게됨
+   * 구조상의 부모 요소를 위치 상의 부모 요소로 만들때도 absolute, fixed 값을 사용하면 구조가 무너지게 될 수 있으니 relative 속성값을 부여하는게 무난
+
+2. **position 속성값이 absolute 또는 fixed인 요소는 display 속성값이 block으로 변경**
+
+   ```html
+   <!-- html -->
+   <span>123</span>
+   span {
+     width: 100px;
+     height: 100px;
+     background-color: royalblue;
+     color: white;
+     font-size: 40px;
+     position: absolute;
+   }
+   <!-- 출력형식 -->
+   인라인 요소인 span 요소가 width, height 속성값이 적용됨 = block 요소로 출력
+   ```
+
+<h4>
+    top, bottom, left, right: 요소의 방향별 거리 지정
+</h4>
+<h5>
+    position과 함께 사용되는 속성
+</h5>
+
+* 속성값 
+
+  * auto: 브라우저가 계산 / 기본값
+
+  * 단위: 직접 위치 지정
+
+    > `left: 20px;` : "왼쪽에서부터" 20px 이동 = 오른쪽으로 20px 이동
+
+<h4>
+    Stack Order : 요소 쌓임 순서
+</h4>
+
+* 어떤 요소가 더 위에 위치할지 판단하는 기준
+  1. 요소에 position 속성의 값이 있는 경우 위에 쌓임. (기본값 static 제외)
+  2. 1번 기준에서 같을 경우 z-index 속성의 값이 높을수록 위에 쌓임
+  3. 2번 기준에서도 같을 경우 HTML의 다음 구조일 수록 위에 쌓임
+
+> ex) 겹쳐진 두 요소가 모두 position 속성이 선언되었다면 z-index가 높은 요소가 위에 위치
+>
+> ex) 겹쳐진 두 요소 중 첫번째 요소만 position 속성이 선언되었다면 position 속성이 없는 두번째 요소는 첫번째 요소보다 z-index 속성값이 높던, html에서 나중에 선언되었던 첫번째 요소의 위에 위치할 수 없음
+>
+> ex) 겹쳐진 두 요소 모두 postion 속성값이 선언되지 않았다면 z-index 속성값을 html 구조상의 순서를 따지며 z-index 속성값도 같은 경우 html 구조상의 순서를 따짐
+
+<h5>
+    z-index : 요소의 쌓임 정도 지정
+</h5> 
+
+* 속성값
+
+  - auto: 부모 요소와 동일한 쌓임 정도 / 기본값
+
+  - 수: 높은 수일수록 위에 쌓임. 음수도 가능하지만 -1 정도만 사용
+
+
+<h4>
+    Flex : 플렉스 정렬
+</h4>
+
+> 1차원 레이아웃 : 수직, 수평
+
+<h5>
+    Flex Container & Flex Item
+</h5>
+
+* ```css
+  display: flex;
+  ```
+
+  * display 속성값이 flex인 요소를 flex container
+  * flex container의 자식 요소들은 flex item
+
+> 아래에서 FC는 container에 선언하는 속성, FI는 Item에 선언하는 속성임을 표시
+
+<h5>
+    FC / display - 2
+</h5>
+
+* 속성값
+
+  - flex: 블록 요소 특성 부여 + flex container 정의
+
+  - inline-flex: 인라인 요소 특성 부여 + flex container 정의
+
+    ```css
+    <!-- html -->
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    /* css */
+    span {
+      background-color: greenyellow;
+      display: flex;
+      margin: 4px;
+    }
+    <!-- span 요소지만 display: flex;: 블록 요소 특성 획득, 세로로 배치됨 -->
+    ```
+
+    ```css
+    <!-- html -->
+    <div>hahaha</div>
+    <div>hohoho</div>
+    <div>hehehe</div>
+    /* css */
+    div {
+      background-color: royalblue;
+      border: 4px solid green;
+      display: inline-flex;
+    }
+    <!-- div 요소지만 display: inline-flex;: 인라인 요소 특성, 가로로 배치됨 -->
+    ```
+
+
+<h5>
+    FC / flex-direction: 정렬의 축을 설정
+</h5>
+
+* 속성값
+
+  * flex container에 선언
+  * flex item 정렬 축, 순서 정의
+
+  - row: 행. 좌에서 우 / 기본값
+
+  - row-reverse: 행. 우에서 좌
+
+  - column: 열. 위에서 아래
+
+  - column-reverse: 열. 아래에서 위
+
+
+* `flex-direction: row;`
+  * flex는 주로 수평 정렬에 사용
+
+<h5>
+    FC / flex-wrap: flex items 묶음(줄바꿈) 여부
+</h5>
+
+* 속성값
+
+  - nowrap: 묶음 없음 / 기본값
+
+    ```css
+    .container {
+      width: 400px;
+      height: 200px;
+      background-color: royalblue;
+      display: flex;
+    }
+    .container .item {
+      width: 100px;
+      height: 100px;
+      background-color: greenyellow;
+      border: 4px dashed green;
+    }
+    ```
+
+    - 한줄에 모두 표현하여 width, height가 100px인 박스들이 찌그러짐
+
+
+  - wrap: 여러줄로 묶음
+    - 한줄에 표현할 때 부모 요소를 벗어나는 요소가 생기면 줄바꿈
+
+
+  - wrap-reverse: wrap의 반대 방향으로 묶음
+
+
+<h5>
+    FC / justify-content: 주 축의 item 정렬 방법
+</h5>
+
+* 속성값
+
+  * flex-start: flex items를 시작점에서부터 배치 시작 / 기본값
+
+  * flex-end: flex items를 끝점에서부터 배치 시작
+
+  * center: flex items 가운데 정렬
+
+  * space-between: flex items 사이를 균일하게 정렬
+
+  * space-around: flex items의 외부 여백을 균일하게 정렬
+
+<h5>
+    FC / align-content: 교차 축의 여러 행 정렬 방법
+</h5>
+
+* 속성값
+  * stretch: flex items를 시작점에서부터 배치 시작행의 높이를 늘림/ 기본값
+  * flex item의 height를 지정하지 않으면 늘어나버림
+  * flex-start : stretch와는 다르게 heigth를 지정하지 않아도 늘어나지 않음
+  * 그 외 : center, space-between, space-around
+  * flex-end 
+
+<h5>
+    FC / align-items: 교차 축의 각 행의 item 정렬 방법
+</h5>
+
+* 속성값
+  - stretch: flex items를 교차 축으로 늘림 / 기본값
+    - `align-content: stretch;`와 동일
+
+
+- flex-start, flex-end, center
+  - baseline: flex items를 각 의 문자 기준선에 정렬
+  - 행의 높이는 동일하고 각 행 내에서의 item의 정렬에 관여
+
+* 여러 줄을 제어할때는 align-content, 한 줄을 제어할때는 align-items 사용
+
+* 한 줄 내에서 주 축 배치: justify-content / 교차 축 배치: aling-items
+
+  ```css
+  .container {
+    ...
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ```
+
+<h5>
+    FI / order: flex item의 정렬 순서
+</h5>
+
+* 속성값
+
+  - 0: 순서 없음 / 기본값
+
+  - 수: 낮은 수일수록 우선 배치
+
+    >html의 요소 순서를 바꾸지 않고도 요소의 배치 순서를 변경 가능
+
+
+<h5>
+    FI / flex-grow: flex item이 여백을 차지하는 비의 항
+</h5>
+
+* 속성값
+
+  - 0: 증가 없음 / 기본값
+
+  - 수: 여백을 차지하는 비의 항
+
+    > flex item 배치 후 남은 공간을 각 item들이 flex-grow값에 비례하여 나눠 갖음
+
+<h5>
+    FI / flex-shrink: flex item이 내놓는 공간의 비의 항
+</h5>
+
+* 속성값
+
+  - 1: flex container 너비에 따라 감소 비율 적용 / 기본값
+
+  - 수: 감소 비율. 0이면 item 크기가 변하지 않는다.
+
+    >  공간이 부족하여 flex item이 작아져야할때 각 item들은 flex-shrink값에 비례하여 크기를 감소시킴
+
+
+<h5>
+    FI / flex-basis: item 공간 배분 전 기본 너비
+</h5>
+
+>  flex container의 여백 분배시에 item 자체의 크기를 특정한 값으로 덮어씌우기 가능
+
+* 속성값
+
+  - auto: 요소의 내용 너비
+
+  - 단위: px, em, rem 등\
+
+  - 예시
+
+    - `flex-basis: auto;`
+      - item의 크기 = 요소 내용의 크기 또는 지정한 크기
+      - border 속성 사용 유무에 따라 box-sizing 속성값에 따라서 요소 내용의 크기가 달라지거나 테두리를 포함한 요소 자체의 크기가 달라지므로 결과 달라짐
+
+
+    - `flex-basis: 0;`
+      - 여백을 계산할때 item의 크기가 0으로 취급됨
+    - `flex-basis: 100px;`
+      - item의 크기가 어떻던간에 100px로 취급한다.
+
+
+<h4>
+    전환 : transition
+</h4>
+
+> 요소가 가상 클래스를 통해 전상태와 후상태를 오고갈때 자연스럽게 변화하도록 하는 효과
+
+<h5>
+    전환 효과를 지정하는 단축 속성
+</h5>
+
+* `transition: 속성명 지속시간 타이밍함수 대기시간;`: **지속시간 필수**
+
+  ```css
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    transition:
+      width 10s, /* 여러 속성에 다른 전환 효과 부여 가능 */
+      height 5s,
+      background-color 2s;
+  }
+  ```
+
+* 개별속성
+
+  - transition-property
+
+  - transition-duration
+
+  - transition-timing-function
+
+  - transition-delay
+
+
+<h5>
+    transition-property: 전환 효과를 사용할 속성 이름 지정
+</h5>
+
+* 속성값
+
+  - all: 모든 속성에 사용 / 기본값
+
+  - 속성이름: 특정 속성에만 사용
+    - `trainsition-property: width;`: 가로너비의 변화에만 전환 효과가 적용됨.
+
+
+<h5>
+    transition-duration: 전환 효과의 지속시간
+</h5>
+
+* 속성값
+
+  - 0s: 전환 효과 없음 / 기본값
+
+  - 시간
+
+
+<h5>
+    transition-timing-function: 전환 효과의 타이밍(Easing) 함수 지정
+</h5>
+
+> easing 함수: 시간에 따른 전환의 진행 정도를 표현하는 함수
+
+* 속성값
+
+  - ease: 느리게-빠르게-느리게 / 기본값
+
+  - linear: 일정
+
+  - ease-in: 느리게-빠르게
+
+  - ease-out: 빠르게-느리게
+
+  - ease-in-out: 느리게-빠르게-느리게
+
+  - cubic-bezier(n,n,n,n): 사용자 정의
+
+  - steps(n): n번 분할된 애니메이션
+
+
+<h5>
+    transition-delay: 전환 효과 시작까지 대기시간 지정
+</h5>
+
+* 속성값
+
+  - 0s: 대기시간 없음 / 기본값
+
+  - 시간
+    -  `transition: 1s .5s;`
+    - 전환 효과가 1초동안 지속되고 0.5초의 delay를 가진다.
+
+
+<h4>
+    변환 : transform
+</h4>
+
+> 요소의 변환을 정의
+
+```css
+transform: 변환함수1 변홤하수2 변환함수3 ... ;
+transform: 원근법 이동 크기 회전 기울임;
+```
+
+<h5>
+    변환함수
+</h5>
+
+- 2D 변환함수
+  - translate(x, y): 이동 / px 단위
+    - translateX, translateY
+  - scale(multiple): 크기 변경 / 배수
+    - scale(x, y)
+    - scaleX, scaleY
+  - rotate(degree): 회전 / 각도(deg)
+  - skewX(x), skewY(y): 기울임 / 각도(deg)
+    - skew(x, y)
+  - matrix(n, n, n, n, n, n): 2차원 변환 효과 / 위의 함수들은 matrix의 여러 경우들
+- 3D 변환함수
+  - perspective(n): 원근법
+  - translate3d(x, y, z), translateZ(z): 3d 이동
+  - scale3d(x, y, z), scaleZ(z): 크기
+  - rotate3d(x, y, z, a), rotateX(x), rotateY(y), rotateZ(z): 회전 (축 회전)
+  - matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
+
+<h5>
+    rotate, rotateX, rotateY
+</h5>
+
+- rotate(deg): 요소 중심을 축으로하여 회전
+- rotateX(deg) / rotateY(deg): X축 / Y축을 중심으로 회전. 원근법이 적용되지않은 상태
+
+<h5>
+    perspective
+</h5>
+
+```css
+transform: perspective(500px) rotateX(45deg);
+```
+
+- perspective는 가장 앞에 위치
+- 인수는 요소를 얼마나 먼 거리에서 바라볼 것인지 의미(요소의 중심 기준). 인수가 작을수록 큰 왜곡
+
+<h5>
+    skewX, skewY
+</h5>
+
+- 마주보는 두 모서리를 모서리와 평행하되 서로 반대인 방향으로 밀어버리는 느낌
+
+<h4>
+    perspective: 하위 요소를 바라보는 원근 거리 지정
+</h4>
+
+>  **transform 속성의 함수가 아니라 속성으로서의 perspective**
+
+* 속성값
+  - 단위: px 등 / 원근 거리
+  - **perspective 속성 vs perspective 함수**
+
+
+- | 분류 | 예제                                       | 적용 대상        | 기준점 설정        |
+  | ---- | ------------------------------------------ | ---------------- | ------------------ |
+  | 속성 | **`perspective: 600px;`**                  | 관찰 대상의 부모 | perspective-origin |
+  | 함수 | **`transform: perspective(600px), ... ;`** | 관찰 대상        | transform-origin   |
+
+- 기준점 설정 - 요소 변환의 기준점을 설정하는 기능
+  
+- 함수: 요소의 transform 속성에 추가 ; 바라보는 대상과 변환 대상이 같음
+
+- 속성: 요소의 부모 요소에 선언           ; 바라보는 대상과 변환 대상이 다름
+
+<h5>
+	backface-visibility: 3D 변환된 요소의 뒷면 표시 여부    
+</h5>
+
+>  rotateX, rotateY를 180도 이상 적용했을때 뒷면을 어떻게 처리할지 정의
+
+* 속성값
+
+  - visible: 뒷면 표시함 / 기본값
+
+  - hidden: 뒷면 숨김
+
 
 ***
 
@@ -694,10 +1289,10 @@ text-Atype {
 </h4>
 <p align="left">
     <center>
-        <a href="https://developer.mozilla.org/ko/docs/Web/CSS">참조 페이지</a>
+        <a href="https://developer.mozilla.org/ko/docs/Web/CSS">참조 페이지1</a>
+        <a href="https://velog.io/@canlion/CSS-%EC%86%8D%EC%84%B1">참조 페이지2</a>
     	<img src="./Ultimate CSS Cheatsheet.png"/>&nbsp 
     </center>
 </p>
-
 
 
