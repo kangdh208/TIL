@@ -81,7 +81,7 @@
   <img src="https://img.shields.io/badge/ER Diagram-F08705?style=flat&logo=diagrams.net&logoColor=white"/></a>&nbsp 
 </p>
 
-* [Database Basic](./7week/DB.md)
+* [Database Basic](./7week/DB_기초.md)
 
 ***
 
