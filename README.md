@@ -40,6 +40,7 @@
   <img src="https://img.shields.io/badge/Python-ffb13b?style=flat&logo=python&logoColor=white"/></a>&nbsp 
 </p>
 
+
 * [Python Entrance](./2week/Python_기초.md)
 * [Basic Python Syntax](./2week/Python_기본.md)
 * [Beginner Python](./2week/Python_초급.md)
@@ -69,3 +70,30 @@
 * [Algorithm Begginer](./4week/Algorithm_초급.md)
 * [Algorithm Intermediate](./4week/Algorithm_중급.md)
 * [Algorithm Advanced](./4week/Algorithm_고급.md)
+
+---
+
+<h3>
+    7th - 8th Week : DataBase
+</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat&logo=SQLite&logoColor=White"/>
+  <img src="https://img.shields.io/badge/ER Diagram-F08705?style=flat&logo=diagrams.net&logoColor=white"/></a>&nbsp 
+</p>
+
+* [Database Basic](./7week/DB.md)
+
+***
+
+<h3>
+    9th - 10th Week : Web
+</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/ES6-ff0000?style=flat&logo=javascript&logoColor=white"/></a>&nbsp 
+  <img src="https://img.shields.io/badge/css-64ff64?style=flat&logo=css3&logoColor=white"/></a>&nbsp
+  <img src="https://img.shields.io/badge/HTML-8b00ff?style=flat&logo=html5&logoColor=white"/></a>&nbsp
+</p>
+
+* [HTML](./9week/HTML/HTML.md)
+* [CSS](./9week/CSS/CSS.md)
+* [JavaScript(ES6)](./9week/ES6/JavaScript.md)
