@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var list = "";
+            var num = 10; // Number type
+            list +="<ul>";
+            list += "    <li>안녕</li>";
+            list += "    <li>자바스크립트</li>";
+            list += "</ul>";
+            num += 10; num += 10;
+            num += 10; num += 10;
+            // 문서에 출력
+            document.body.innerHTML = list;
+            document.write = num; // 덮어쓰여서 앞부분 list 사라짐
+        }
+    </script>
+</body>
+</html>

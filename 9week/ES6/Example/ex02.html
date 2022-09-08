@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery로 색상 바꾸기</title>
+    <!-- CDN방식-인터넷이 연결이 되는 곳에서만 아래코드가 적용 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- jquery파일을 다운로드를 하여 연결하는 코드 -->
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script>
+        //현재 문서가 준비가 되면 #menu2 li를 찾아서 스타일 아래와 같이 적용해라.
+        $(document).ready(function(){
+            $("#menu1 li").css("color", "#33ffbd"); //색깔 헥스코드 인터넷 찾아봐그냥
+        })
+        $(document).ready(function(){
+            $("#menu2 li").css("color", "#f00");    
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <ul class="menu" id="menu1">
+            <li>김밥</li>
+            <li>비빔밥</li>
+            <li>제육덥밥</li>
+            <li>오징어덮밥</li>
+            <li>돌솥밥</li>
+        </ul>
+        <ul class="menu" id="menu2">
+            <li>자라탕</li>
+            <li>감자탕</li>
+            <li>오리탕</li>
+            <li>닭백숙</li>
+            <li>추어탕</li>
+        </ul>
+    </div>    
+</body>
+</html>

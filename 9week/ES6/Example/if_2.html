@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문-2</title>
+</head>
+<body>
+    <script>
+        var value = window.prompt("input number : ");
+        //prompt()에서 받은 value 값은 string타입. parseInt()통해 정수로변경
+        //chrome은 가능한데 IE는 불가능
+        value = parseInt(value);
+        if (value % 2 == 0) {
+            alert( " Even Number " );
+        }
+        else {
+            alert(" Odd Number ");
+        }
+    </script>
+</body>
+</html>
