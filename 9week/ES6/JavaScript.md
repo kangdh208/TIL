@@ -31,7 +31,6 @@
 <h3>
     소스작성 및 실행
 </h3>
-
 **\<script> 태그 안에 자바스크립트 작성**
 
 1. \<script> 태그는 HTML 문서 어디에든 사용 가능
@@ -91,6 +90,22 @@
 * 예약어는 식별자로 사용할 수 없음
 
 [환영합니다 예제](./Example/welcome.html)
+
+```javascript
+<body>
+    <h1>안녕하세요</h1>
+	<script>
+    	// prompt()는 사용자로부터 입력받을때 사용
+    	var name = prompt("이름을 입력하세요");
+		// document(객체)는 현재 문서를 의미하고, write()는 출력함수
+		document.write("<b>" + name + "</b>님, 환영합니다.");
+	</script>
+	<b>null</b>
+	"님, 환영합니다. "
+</body>
+```
+
+
 
 <h3>
     변수
