@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen and (max-width:992px)" href="./table.css">
+    <link rel="stylesheet" media="screen and (min-width:992px)" href="./table2.css">
+    <title>nav_footer</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="d-flex">
+            <a class="navbar-brand px-4" href="#">
+                <img src="./images/logo.png" alt="logo" style="width: 5rem;"></a>
+            <div class="d-flex align-items-center">
+                <a class="nav-link active text-light " aria-current="page" href="./02_home.html">Home</a>
+                <a class="nav-link text-light" href="03_community.html">Community</a>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+                <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center fs-1 my-5">
+        Community
+    </div>
+    <div class="container-fluid row parent" style="background-size: cover;">
+        <aside class="child left">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="!#" class="text-decoration-none py-3">Boxoffice</a></li>
+                <li class="list-group-item"><a href="!#" class="text-decoration-none py-3">Movies</a></li>
+                <li class="list-group-item"><a href="!#" class="text-decoration-none py-3">Genres</a></li>
+                <li class="list-group-item"><a href="!#" class="text-decoration-none py-3">Actors</a></li>
+            </ul>
+        </aside>
+        <section class="d-flex flex-column child right">
+            <table class="table mintable">
+                <thead>
+                    <th>영화 제목</th>
+                    <th>글 제목</th>
+                    <th>작성자</th>
+                    <th>작성 시간</th>
+                </thead>
+                <tbody>
+                    <tr class="minicard">
+                        <td class="minicardtitle">Great Movie title</td>
+                        <td class="minicardhead">Best Movie Ever</td>
+                        <td class="minicarduser">user</td>
+                        <td class="minicardupdate">1 minute ago</td>
+                    </tr>
+                    <tr class="minicard">
+                        <td class="minicardtitle">Great Movie title</td>
+                        <td class="minicardhead">Movie Test</td>
+                        <td class="minicarduser">user</td>
+                        <td class="minicardupdate">1 minute ago</td>
+                    </tr>
+                    <tr class="minicard">
+                        <td class="minicardtitle">Great Movie title</td>
+                        <td class="minicardhead">Movie Test</td>
+                        <td class="minicarduser">user</td>
+                        <td class="minicardupdate">1 minute ago</td>
+                    </tr>
+                    <tr class="minicard">
+                        <td class="minicardtitle">Great Movie title</td>
+                        <td class="minicardhead">Movie Test</td>
+                        <td class="minicarduser">user</td>
+                        <td class="minicardupdate">1 minute ago</td>
+                    </tr>
+                    <tr class="minicard">
+                        <td class="minicardtitle">Great Movie title</td>
+                        <td class="minicardhead">Movie Test</td>
+                        <td class="minicarduser">user</td>
+                        <td class="minicardupdate">1 minute ago</td>
+                    </tr>
+                </tbody>
+                </nav>
+            </table>
+            <nav aria-label="Page navigation example d-flex">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#"><</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
+    <script src="extensions/mobile/bootstrap-table-mobile.js"></script>
+</body>
+</html>

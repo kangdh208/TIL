@@ -1,0 +1,47 @@
+
+.mintable {
+    background-color: transparent;
+}
+.minicardhead {
+    font-size: 3rem;
+    border-bottom: 0em;
+    border-color: transparent;
+}
+.minicardtitle {
+    font-size: 2rem;
+    border-bottom: 0em;
+    border-color: transparent;
+}
+.minicarduser {
+    font-size: 1rem;
+    border-bottom: 0em;
+    border-color: transparent;
+}
+.minicardupdate {
+    border-bottom: 0em;
+    border-color: transparent;
+}
+.minicard {
+    flex-grow: 1;
+    margin-top: 1.5;
+    margin-bottom: 3rem;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    border:0.025rem solid;
+    border-color: lightgray;
+    border-radius: 0.5rem;
+}
+
+thead {
+    color: transparent;
+    background-color: transparent;
+}
+
+.page {
+    background-color: transparent;
+    color: transparent;
+}
+.page li {
+    color: transparent;
+}
