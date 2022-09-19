@@ -17,8 +17,6 @@
 <h2>
     Document Object Model (DOM)
 </h2>
-
-
 * DOM 조작
   
   * 문서(HTML) 조작
@@ -254,3 +252,216 @@ window.document
 * Element.**getAttribute(attributeName)**
   * 해당 요소의 지정된 값(문자열)을 반환
   * 인자(attributeName)는 값을 얻고자 하는 속성의 이름
+
+<h2>
+    Event
+</h2>
+
+> 네트워크 활동이나 사용자와의 상호작용 같은 사건의 발생을 알리기 위한 객체
+
+* 이벤트 발생 
+  * 마우스를 클릭하거나 키보드를 누르는 등 사용자 행동으로 발생할 수도 있음
+  * 특정 메서드를 호출(Element.click())하여 프로그래밍적으로도 만들어 낼 수 있음
+
+* 역할
+  * 특정 이벤트가 발생 >> 할 일(함수)를 등록
+
+<h3>
+    Event handler - addEventListener()
+</h3>
+
+* EventTarget.**addEventListener()**
+  * 지정한 이벤트가 대상에 전달될 때마다 호출할 함수를 설정
+  * 이벤트를 지원하는 모든 객체(Element, Document, Window 등)를 대상으로 지정 가능
+
+* target.**addEventListener(type, listener**[, options]**)**
+
+  * type
+    * 반응 할 이벤트 유형 (대소문자 구분 문자열)
+  * listener
+    * 지정된 타입의 이벤트가 발생했을 때 알림을 받는 객체
+    * `EventListener 인터페이스` 혹은` JS function 객체(콜백 함수)`여야 함
+  * EventTarget에 type이벤트 발생시, listener가 일어나게 등록
+
+  ```javascript
+  const btn = document.querySelector('button');
+  btn.addEventListener('click', function (event) {
+      alert('Button Clicked');
+      console.log(event);
+  });
+  ```
+
+  * 비교(onclick vs id)
+
+    * onclick 사용시
+
+      ```html
+      <button onclick="alertMessage()">
+          Press me!
+      </button>
+      ```
+
+      ```javascript
+      const alertMessage = function () {
+          alert('PoP!!')
+      }
+      ```
+
+    * id 사용시
+
+      ```html
+      <button id="my-button">
+          Press me!
+      </button>
+      ```
+
+      ```javascript
+      const myButton = document.querySelector('#my-button');
+      myButton.addEventListener('click', alertMessage)
+      ```
+
+  * 텍스트
+
+    * innerText
+
+      ```html
+      <p id="my-paragraph"></p>
+      <form action="#">
+          <label for="my-text-input">write down here.</label>
+          <input id="my-text-input" type="text">
+      </form>
+      ```
+
+      ```javascript
+      const myTextInput = document.querySelector('#my-text-input')
+      
+      myTextInput.addEventListener('input', function (event) {
+          // console.log(event)
+          const myPtag = document.querySelector('#my-paragraph')
+          myPtag.innerText = event.target.value
+      })
+      ```
+
+    * Style
+
+      ```html
+      <h2>Change My Color</h2>
+      <label for="change-color-input">Write down color here</label>
+      <input id="change-color-input">
+      <hr>
+      ```
+
+      ```javascript
+      const colorInput = document.querySelector('#change-color-input');
+      const changeColor = function (event) {
+          const h2Tag = document.querySelector('h2');
+          h2Tag.style.color = event.target.value;
+      };
+      colorInput.addEventListener('input', changeColor)
+      ```
+
+<h3>
+    Event 취소
+</h3>
+
+* event.**preventDefault()**
+
+  * 현재 이벤트의 기본 동작을 중단
+
+  * HTML 요소의 기본 동작을 작동하지 않게 막음
+
+    * ex) a 태그의 기본 동작은 클릭 시 링크로 이동 / form 태그의 기본 동작은 form 데이터 전송
+
+  * 이벤트를 취소할 수 있는 경우, 이벤트의 전파를 막지 않고 그 이벤트를 취소
+
+  * 예제
+
+    * 1번
+
+      ```html
+      <input type="checkbox" id="my-checkbox">
+      ```
+
+      ```javascript
+      const checkBox = document.querySelector('#my-checkbox')
+      checkBox.addEventListener('click', function (event) {
+          event.preventDefault()
+          console.log(event)
+      })
+      ```
+
+    * 2번
+
+      ```html
+      <form action="/articles/" id="my-form">
+          <input type="text">
+          <input type="submit" value="Submit!">
+      </form>
+      ```
+
+      ```javascript
+      const formTag = document.querySelector('#my-form')
+      
+      formTag.addEventListener('submit', function (event) {
+          console.log(event)
+          event.preventDefault()
+          event.target.reset()
+      })
+      ```
+
+    * 3번
+
+      ```html
+      <a href="https://google.com" target="_blank" id="my-link">Google</a>
+      ```
+
+      ```javascript
+      // click 취소
+      
+      const aTag = document.querySelector('#my-link')
+      
+      aTag.addEventListener('click', function (event) {
+          console.log(event)
+          event.preventDefault()
+      })
+      ```
+
+      ```javascript
+      // scroll 취소
+      
+      document.addEventListener('scroll', function (event) {
+          console.log(event)
+      	event.preventDefault()
+      })
+      ```
+
+  * 취소 불가 이벤트도 존재
+
+    * 취소 가능여부는 event.cancelabel 로 확인
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
