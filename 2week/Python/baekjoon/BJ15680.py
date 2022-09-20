@@ -2,7 +2,8 @@
 
 # 이를 출력하는 프로그램을 작성해보도록 하자.
 
-if input() == 0:
+a = int(input())
+if a == 0:
     print('YONSEI')
-elif input() == 1:
+elif a == 1:
     print('Leading the Way to the Future')
