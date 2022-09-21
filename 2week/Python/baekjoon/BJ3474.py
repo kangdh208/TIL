@@ -8,6 +8,9 @@
 
 # 그러나 현우는 경악을 금치 못하여 지금 코딩을 할 수 없는 상황이다. 여러분이 현우를 대신하여 프로그램을 작성하시오.
 
+import sys
+input = sys.stdin.readline
+
 T = int(input())
 
 def fctchk(num):
