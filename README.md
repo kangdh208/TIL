@@ -86,7 +86,7 @@
 ***
 
 <h3>
-    9th - 10th Week : Web
+    9th - 11th Week : Web - FrontEnd(BootStrap)
 </h3>
 <p align="center">
   <img src="https://img.shields.io/badge/ES6-ff0000?style=flat&logo=javascript&logoColor=white"/></a>&nbsp 
@@ -94,6 +94,19 @@
   <img src="https://img.shields.io/badge/HTML-8b00ff?style=flat&logo=html5&logoColor=white"/></a>&nbsp
 </p>
 
+
 * [HTML](./9week/HTML/HTML.md)
 * [CSS](./9week/CSS/CSS.md)
 * [JavaScript(ES6)](./9week/ES6/JavaScript.md)
+
+***
+
+<h3>
+    12th - Week : Web - BackEnd(Django)
+</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/Django-ff3355?style=flat&logo=django&logoColor=white"/></a>
+</p>
+
+* [Django SetUp](./12week/DjangoSetUp)
+
