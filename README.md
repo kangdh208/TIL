@@ -108,5 +108,5 @@
   <img src="https://img.shields.io/badge/Django-ff3355?style=flat&logo=django&logoColor=white"/></a>
 </p>
 
-* [Django SetUp](./12week/DjangoSetUp)
+* [Django SetUp](./12week/DjangoSetUp.md)
 
