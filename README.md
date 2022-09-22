@@ -110,3 +110,4 @@
 
 * [Django SetUp](./12week/DjangoSetUp.md)
 
+* [Django Template Language](./12week/DjangoTemplateLanguage.md)
