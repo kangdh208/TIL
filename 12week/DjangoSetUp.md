@@ -1,8 +1,10 @@
 <h1>
     Django
 </h1>
+<h2>Django : Python</h2>
 
-<h2>Django : Python
+
+
 
 > 장고란 무엇인가요?
 >
