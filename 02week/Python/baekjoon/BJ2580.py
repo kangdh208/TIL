@@ -50,4 +50,4 @@ def solve(i):
         board[r][c] = 0
 
 
-solve(0)/
+solve(0)
