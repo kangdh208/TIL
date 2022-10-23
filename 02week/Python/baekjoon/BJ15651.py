@@ -4,15 +4,21 @@
 # 같은 수를 여러 번 골라도 된다.
 
 import sys
+
 input = sys.stdin.readline
 
-N,M = map(int, input().split())
+N, M = map(int, input().split())
 lst = []
+
+
 def dfs():
     if len(lst) == M:
-        print(' '.join(map(str,lst)))
-    for i in range(1,N+1):
+        print(" ".join(map(str, lst)))
+        return
+    for i in range(1, N + 1):
         lst.append(i)
         dfs()
         lst.pop()
+
+
 dfs()
