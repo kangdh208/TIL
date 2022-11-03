@@ -12,11 +12,7 @@
 import sys
 
 input = sys.stdin.readline
-A, B = input().split()
-AList = list(A)
-BList = list(B)
-answer = 0
-for i in range(len(AList)):
-    for j in range(len(BList)):
-        answer += int(AList[i]) * int(BList[j])
-print(answer)
+A, B = map(list, input().split())
+A = list(map(int, A))
+B = list(map(int, B))
+print(sum(A) * sum(B))
