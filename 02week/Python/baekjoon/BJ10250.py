@@ -8,16 +8,39 @@
 
 # 여러분이 작성할 프로그램은 초기에 모든 방이 비어있다고 가정하에 이 정책에 따라 N 번째로 도착한 손님에게 배정될 방 번호를 계산하는 프로그램이다. 첫 번째 손님은 101 호, 두 번째 손님은 201 호 등과 같이 배정한다. 그림 1 의 경우를 예로 들면, H = 6이므로 10 번째 손님은 402 호에 배정해야 한다.
 
+# T = int(input())
+# result = []
+# for z in range(T):
+#     h, w, n = map(int, input().split())
+#     q = n // h
+#     r = n % h
+#     if r == 0:
+#         q -= 1
+#         r = h
+#     room = r * 100 + q + 1
+#     result.append(room)
+# for i in range(T):
+#     print(result[i])
+
+
 T = int(input())
-result =[]
-for z in range(T):
+for _ in range(T):
     h, w, n = map(int, input().split())
-    q = n//h
-    r = n%h
+    if n % h == 0:
+        print(100 * h + (n // h))
+    else:
+        print(100 * (n % h) + n // h + 1)
+
+
+T = int(input())
+lst = []
+for _ in range(T):
+    h, w, n = map(int, input().split())
+    array = [[]] * w
+    q = n // h
+    r = n % h
     if r == 0:
-        q -=1
         r = h
-    room = r*100+q+1
-    result.append(room)
-for i in range(T):
-    print(result[i])
+    for i in range(1, h+1):
+        array[i].append((i, 100*r + q))
+print(lst)

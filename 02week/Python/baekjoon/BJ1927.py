@@ -7,19 +7,20 @@
 import sys
 import heapq
 
+input = sys.stdin.readline
 N = int(input())
 numbers = []
 result = []
 # heapq.heapify(result)
 
 for z in range(N):
-    numbers.append(int(sys.stdin.readline().rstrip()))
+    numbers.append(int(input().rstrip()))
 
 for n in numbers:
     if n != 0:
         heapq.heappush(result, n)
     else:
-        if len(result)==0:
+        if len(result) == 0:
             print(0)
         else:
             print(heapq.heappop(result))

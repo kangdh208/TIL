@@ -9,16 +9,17 @@
 
 # 각 계단에 쓰여 있는 점수가 주어질 때 이 게임에서 얻을 수 있는 총 점수의 최댓값을 구하는 프로그램을 작성하시오.
 
+# 긁풀
 import sys
 
 input = sys.stdin.readline
 
 n = int(input())
 stair = [0] + [int(input()) for _ in range(n)] + [0]
-cache = [0] * (n + 2)
-cache[1] = stair[1]
-cache[2] = cache[1] + stair[2]
+score = [0] * (n + 2)
+score[1] = stair[1]
+score[2] = score[1] + stair[2]
 
 for i in range(3, n + 1):
-    cache[i] = max(cache[i - 2], cache[i - 3] + stair[i - 1]) + stair[i]
-print(cache[n])
+    score[i] = max(score[i - 2], score[i - 3] + stair[i - 1]) + stair[i]
+print(score[n])

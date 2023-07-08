@@ -4,13 +4,27 @@
 
 # N과 K가 주어지면 (N, K)-요세푸스 순열을 구하는 프로그램을 작성하시오.
 
+
 from collections import deque
+
+# rotate 메서드 사용
+N, K = map(int, input().split())
+rotate_q = deque(i for i in range(1, N + 1))
+result = []
+while len(rotate_q):
+    rotate_q.rotate(K)
+    result.append((rotate_q.popleft()))
+result = map(str, result)
+answer = ", ".join(result)
+print(f"<{answer}>")
+
+# popleft, pop 메서드 사용
 answer = []
 n, k = map(int, input().split())
-queue = deque([i for i in range(1,n+1)])
+queue = deque([i for i in range(1, n + 1)])
 while queue:
-    for i in range(k-1):
+    for i in range(k - 1):
         queue.append(queue.popleft())
     answer.append(str(queue.popleft()))
-line = ', '.join(answer)
+line = ", ".join(answer)
 print(f"<{line}>")
